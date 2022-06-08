@@ -1,3 +1,10 @@
 .task {
   /* Sample  */
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.textLine {
+  text-decoration: line-through;
 }

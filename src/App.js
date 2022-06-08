@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import TaskApp from "./components/TaskApp";
 import "./App.css"
 function App() {
-  const [count,setcount] = useState(0)
-  const [count1,setcount1] = useState(0)
-  const [task, setTask] = useState("")
-  const [tasks, setTasks] = useState([])
-  const handleSubmit = () => {
-    setTasks([
-        ...tasks,task
-    ])
-}
-  return <div>
-    <div>
+  // const [count,setcount] = useState(0)
+  // const [count1,setcount1] = useState(0)
+  // const [task, setTask] = useState("")
+  // const [tasks, setTasks] = useState([])
+  // const handleSubmit = () => {
+  //   setcount1()
+  //   setTasks([
+  //       ...tasks,task
+  //   ])
+// }
+  return <div className="App">
+    {/* <div>
       <div>Todo List</div>
       <div>you have {count} out of {count1} tasks remaining</div>
     </div>
@@ -23,7 +25,8 @@ function App() {
       {tasks.map((e,i) => (
                             <p key={i}> {e} </p>
                         ))}
-    </div>
+    </div> */}
+    <TaskApp/>
   </div>;
 }
 
